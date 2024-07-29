@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "TichDiem";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="w3agile-validation w3ls-validation">
+    <div class="panel panel-widget agile-validation">
+        <div class="validation-grids widget-shadow" data-example-id="basic-forms">
+            <div class="input-info">
+                <h3>Tích điểm khách hàng :</h3>
+            </div>
+            <p>*** Chú ý: Khi tích điểm 1000vnd sẽ được 1 điểm</p>
+            <div class="form-body form-body-info">
+                <form data-toggle="validator" novalidate="true" action="#" method="post">
+                    <div class="form-group ">
+                        <input name="ID" type="hidden" value="@ViewBag.ID">
+                        <input type="text" class="form-control" id="SoTien" placeholder="Nhập số tiền tích điểm" max="255" name="SoTien" required="">
+                    </div>
+                    
+                    <br />
+                    <div class="bottom">
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary ">Thêm</button>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+

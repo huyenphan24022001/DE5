@@ -1,0 +1,51 @@
+﻿@model DE5.Models.KhachHang
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-3">
+    <h2>Chi tiết</h2>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Mã</th>
+                <th>Tên lót</th>
+                <th>Tên</th>
+                <th>Tài khoản</th>
+                <th>Ngày sinh</th>
+                <th>Địa chỉ</th>
+                <th>Ngày tham gia</th>
+                <th>Điểm</th>
+                <th>Hạng thành viên</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.ID</td>
+                <td>@Model.HoLot</td>
+                <td>@Model.Ten</td>
+                <td>@Model.TaiKhoan</td>
+                <td>@Model.NgaySinh</td>
+
+                <td>@Model.DiaChi</td>
+                <td>@Model.NgayThamGia</td>
+
+                <td>@Model.Diem</td>
+                <td>
+                    @ViewBag.The
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

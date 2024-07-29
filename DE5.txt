@@ -1,0 +1,17 @@
+Viết ứng dụng web Quản lý thẻ điểm của khách hàng, cài đặt theo mô hình MVC thực hiện các chức năng sau:
+-	Quản lý Khách hàng (thêm, cập nhật, xóa, xem danh sách) (20đ)
+-	Chức năng tích điểm của khách hàng (20đ)
+-	Liệt kê danh sách có khách hàng có điểm từ thấp đến cao. (10đ)
+Thông tin cơ bản của Khách hàng:
+-	Họ lót
+-	Tên
+-	Tài khoản
+-	Ngày sinh
+-	Địa chỉ
+-	Ngày tham gia
+-	Điểm số
+Thông tin cơ bản của Thẻ điểm
+-	Tên thẻ (Đồng, Bạc, Vàng)
+-	Loại thẻ (A,B,C)
+-	Điểm cận dưới
+-	Điểm cận trên

@@ -1,0 +1,77 @@
+﻿@model DE5.Models.KhachHang
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h2>Thêm mới khách hàng</h2>
+
+<div class="w3agile-validation w3ls-validation">
+    <div class="panel panel-widget agile-validation">
+        <div class="validation-grids widget-shadow" data-example-id="basic-forms">
+            <div class="input-info">
+                <h3>Thông tin tin tức :</h3>
+            </div>
+            <div class="form-body form-body-info">
+                <form data-toggle="validator" novalidate="true" action="#" method="post">
+                    <div class="form-group ">
+                        <input type="text" class="form-control" id="HoLot" placeholder="Họ lót" max="255" name="HoLot" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="Ten" max="255" placeholder="Tên" name="Ten" required="">
+
+                    </div>
+                    <div class="form-group">
+
+                        <input type="text" class="form-control" id="TaiKhoan" max="255" placeholder="Tài khoản" name="TaiKhoan" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="date" class="form-control" id="NgaySinh" max="255" placeholder="Ngày sinh" name="NgaySinh" required="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="DiaChi" max="255" placeholder="Địa chỉ" name="DiaChi" required="">
+                    </div>
+                   
+                    <br />
+                    <div class="bottom">
+
+                        <div class="form-group">
+                            <button type="submit"  class="btn btn-primary ">Thêm</button>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script>
+
+   
+
+    const reader = new FileReader();
+    const fileInput = document.getElementById("hsp_tentaptin");
+    const img = document.getElementById("preview-img");
+    reader.onload = e => {
+        img.src = e.target.result;
+    }
+    fileInput.addEventListener('change', e => {
+        const f = e.target.files[0];
+        reader.readAsDataURL(f);
+    })
+</script>
+
+
+
